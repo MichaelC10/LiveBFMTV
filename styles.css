@@ -1,0 +1,541 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Top banner : la bannière bleue */
+
+.top-banner {
+    background-color: #02399F;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 25px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35px;
+    margin-right: 120px;
+}
+
+.link-logoBFMTV {
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+}
+
+.logoBFMTV {
+    width: 90px;
+    height: 90px;
+}
+
+.direct {
+    display: flex;
+    width: 150px;
+}
+
+.direct-tv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.direct-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.title-top-banner {
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.icon-top-banner {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+/* Nav primary : le menu principal */
+
+nav.nav-primary {
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+}
+
+nav.nav-primary ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav.nav-primary ul li {
+    margin: 13px 10px 0px 10px;
+    padding-bottom: 8px;
+    border-bottom: 4px solid transparent;
+}
+
+nav.nav-primary ul li:hover {
+    border-bottom: 4px solid #02399F;
+}
+
+.category-menu {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Main */
+
+.main-wrapper {
+    margin: 0px 60px;
+    padding: 170px 33px 0px;
+}
+
+.grid-wrapper-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) minmax(340px, 1fr);
+    gap: 45px;
+}
+
+div.columns-ab {
+    grid-column: 1/3;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+    color: #A7A7A7;
+    margin: 10px 0px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+
+.icon-home {
+    color: #A7A7A7;
+    font-size: 14px;
+}
+
+.icon-home:hover {
+    opacity: 0.6;
+}
+
+.icon-arrow-right {
+    font-size: 20px;
+}
+
+.breadcrumb ul li span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.breadcrumb li:nth-child(1), .icon-arrow-right {
+    margin-right: 4px;
+}
+
+/* --- */
+
+h1.direct-title {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    background-color: #ef3c00;
+    display: inline-block;
+    padding: 5px 10px 3px;
+    margin: 15px 0px;
+}
+
+img.live-player {
+    width: 798px;
+    height: 449px;
+}
+
+/* Direct bottom */
+
+div.direct-bottom {
+    padding: 7px 0px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+div.direct-title-bottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    z-index: -1;
+}
+
+span.moment-title::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ef3c00;
+    position: absolute;
+    border-radius: 50%;
+    top: 8px;
+    left: 0px;
+}
+
+span.moment-title {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #A5A5A5;
+    letter-spacing: 0.5px;
+}
+
+h2.program-title {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 1px 0px 0px 4px;
+}
+
+/* Direct bottom link (social media) */
+
+ul.social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.social-media li:nth-child(1) {
+    margin-right: 6px;
+}
+
+.icon-facebook {
+    color: #3C5A98;
+    font-size: 28px;
+}
+
+.icon-facebook:hover {
+    opacity: 0.9;
+}
+
+.container-icon-twitter {
+    background-color: #5BC1DF;
+    width: min-content;
+    padding: 5px 6px 3px 6px;
+    border-radius: 50%;
+}
+
+div.container-icon-twitter:hover {
+    opacity: 0.85;
+}
+
+.icon-twitter {
+    color: #fff;
+    font-size: 17px;
+}
+
+/* Column c */
+
+div.column-c aside {
+    margin: 95px 0px 0px;
+    padding: 0px 20px;
+}
+
+h2.title-column-c {
+    margin: 0px 0px 20px;
+    font-size: 18px;
+}
+
+div.direct-item {
+    margin: 0px 0px 25px;
+}
+
+a.link-direct-item {
+    text-decoration: none;
+    display: flex;
+}
+
+img.direct-image {
+    width: 132px;
+    height: 74px;
+    margin-right: 15px;
+}
+
+div.direct-categorie {
+    padding-top: 12px;
+}
+
+h3.title-categorie {
+    color: #000;
+    font-size: 16px;
+    margin: 0px;
+}
+
+h3.title-categorie:hover {
+    opacity: 0.6;
+}
+
+p.description-categorie {
+    margin: 0px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    color: #A5A5A5;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+/* section ultimate-news */
+
+section.ultimate-news {
+    padding: 28px 0px;
+}
+
+h2.section-title {
+    font-size: 18px;
+    margin: 0px 0px 23px;
+}
+
+div.grid-wrapper-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+}
+
+a.link-news-item {
+    text-decoration: none;
+}
+
+img.image-news {
+    width: 283px;
+}
+
+h3.title-news {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.1;
+    margin: 5px 0px 0px;
+    letter-spacing: 0.1px;
+}
+
+h3.title-news:hover {
+    opacity: 0.65;
+}
+
+/* footer */
+
+footer.footer {
+    background-color: #001741;
+}
+
+/* top-footer */
+
+div.top-footer {
+    padding: 20px 0px;
+    border-bottom: 1px solid #1A2F54;
+}
+
+div.top-footer-content {
+    margin: 0px 93px;
+    display: flex;
+    align-items: center;
+}
+
+img.logoBFMTV-footer {
+    width: 76px;
+    height: 72px;
+    margin: 0px 30px 0px 0px;
+}
+
+div.footer-big-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    width: 100%;
+}
+
+div.container-right-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+ul.footer-social-media {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a.footer-link-icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    margin: 0px 5px 0px 0px;
+}
+
+a.footer-link-icon:hover {
+    opacity: 0.75;
+}
+
+.footer-icon-facebook {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 26%;
+    left: 32%;
+}
+
+.footer-icon-twitter {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 26%;
+    left: 28%;
+}
+
+.footer-icon-rss {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 22%;
+    left: 31%;
+}
+
+.footer-icon-mail {
+    color: #fff;
+    position: absolute;
+    top: 26%;
+    left: 27%;
+}
+
+div.footer-middle-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+ul.footer-mobile-os {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-icon-apple {
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+    top: 21%;
+    left: 31%;
+}
+
+.footer-icon-android {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 25%;
+}
+
+/* middle-footer */
+
+div.middle-footer {
+    border-bottom: 1px solid #1A2F54;
+}
+
+div.middle-footer-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 93px;
+    padding: 28px 0px;
+}
+
+div.footer-col:nth-child(1) ul, div.footer-col:nth-child(2) ul {
+    margin: 10px 120px 0px 0px;
+}
+
+div.footer-col:nth-child(3) ul {
+    margin: 10px 186px 0px 0px;
+}
+
+div.footer-col:nth-child(4) ul {
+    column-count: 2;
+    margin: 10px 0px 0px;
+}
+
+div.footer-col-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.3;
+}
+
+div.footer-col ul {
+    list-style: none;
+    padding: 0px;
+}
+
+div.footer-col ul a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 2.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+div.footer-col ul a:hover {
+    opacity: 0.75;
+}
+
+/* bottom-footer */
+
+p.bottom-footer {
+    color: #fff;
+    opacity: 0.3;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    margin: 0px;
+    padding: 20px 35px;
+    line-height: 2;
+    -webkit-font-smoothing: antialiased;
+}
